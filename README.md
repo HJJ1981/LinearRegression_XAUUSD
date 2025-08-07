@@ -25,7 +25,7 @@ LinearRegression_XAUUSD/
 ├── 📓 15Features_Linear_Regression_high_price_pred.ipynb   # High price prediction model  
 ├── 📓 15Features_Linear_Regression_low_price_pred.ipynb    # Low price prediction model
 ├── 📄 XAUUSD_Weekly_20200105_20250629.csv                 # Raw weekly gold price data
-├── 📄 price_data.csv                                      # Processed feature data
+├── 📄 price_data.csv                                      # Processed weekly gold price data
 ├── 🛠️ requirements.txt                                    # Python dependencies
 ├── 🛠️ environment.yml                                     # Conda environment setup
 ├── 📁 assets/                                             # Images and visualizations
@@ -34,7 +34,7 @@ LinearRegression_XAUUSD/
 
 ## 📈 Dataset Information
 
-### Raw Data (XAUUSD_Weekly_20200105_20250629.csv)
+### Raw Data (XAUUSD_Weekly_20200105_20250629.csv) from MetaTrader 5
 - **Timeframe**: Weekly data from January 5, 2020 to June 29, 2025
 - **Columns**: DATE, OPEN, HIGH, LOW, CLOSE, TICKVOL, VOL, SPREAD
 - **Records**: 280+ weekly observations
@@ -104,21 +104,84 @@ jupyter lab
 jupyter notebook 15Features_Linear_Regression_close_price_pred.ipynb
 ```
 
-## 🎯 Model Performance
+## 📊 Model Results & Visualizations
+
+### 🎯 Close Price Prediction Model
+
+#### Model Performance Metrics
+![Close Price Model Performance](assets/close_price_model_performance.png)
+
+#### Price Prediction Analysis
+![Close Price Line Plot](assets/close_price_line_plot.png)
+
+#### Prediction Accuracy Assessment
+![Close Price Scatter Plot](assets/close_price_scatter_plot.png)
+
+#### Residual Analysis
+![Close Price QQ Plot](assets/close_price_qq_plot.png)
+
+#### Data Distribution Analysis
+![Close Price Histogram](assets/close_price_histogram.png)
+
+---
+
+### 📈 High Price Prediction Model
+
+#### Model Performance Metrics
+![High Price Model Performance](assets/high_price_model_performance.png)
+
+#### Price Prediction Analysis
+![High Price Line Plot](assets/high_price_line_plot.png)
+
+#### Prediction Accuracy Assessment
+![High Price Scatter Plot](assets/high_price_scatter_plot.png)
+
+#### Residual Analysis
+![High Price QQ Plot](assets/high_price_qq_plot.png)
+
+#### Data Distribution Analysis
+![High Price Histogram](assets/high_price_histogram.png)
+
+---
+
+### 📉 Low Price Prediction Model
+
+#### Model Performance Metrics
+![Low Price Model Performance](assets/low_price_model_performance.png)
+
+#### Price Prediction Analysis
+![Low Price Line Plot](assets/low_price_line_plot.png)
+
+#### Prediction Accuracy Assessment
+![Low Price Scatter Plot](assets/low_price_scatter_plot.png)
+
+#### Residual Analysis
+![Low Price QQ Plot](assets/low_price_qq_plot.png)
+
+#### Data Distribution Analysis
+![Low Price Histogram](assets/low_price_histogram.png)
+
+## 🎯 Model Performance Summary
 
 Each notebook contains:
 - **Data preprocessing** and feature engineering
 - **Exploratory Data Analysis** (EDA) with visualizations
 - **Linear Regression model** training and validation
-- **Performance metrics**: R², RMSE, MAE
+- **Performance metrics**: MAE, MSE, RMSE, MAPE, R²
 - **Prediction visualizations** and residual analysis
+
+### Key Performance Insights:
+- **Close Price Model**: Provides baseline price prediction capabilities
+- **High Price Model**: Captures peak price movements and volatility
+- **Low Price Model**: Identifies support levels and minimum price thresholds
+- **Comparative Analysis**: All three models show consistent predictive patterns
 
 ## 🛠️ Technical Stack
 
 - **Data Analysis**: `pandas`, `numpy`
 - **Machine Learning**: `scikit-learn`
 - **Visualization**: `matplotlib`, `seaborn`
-- **Deep Learning**: `tensorflow` (for advanced features)
+- **Deep Learning**: `tensorflow` (Not applicable in this project)
 - **Statistical Analysis**: `scipy`
 - **Interactive Notebooks**: `jupyter lab`, `ipywidgets`
 
@@ -128,6 +191,8 @@ Each notebook contains:
 - **Feature importance** analysis for price prediction
 - **Model accuracy** across different price targets (Close vs High vs Low)
 - **Time series trends** and seasonal patterns
+- **Statistical validation** through residual analysis and QQ plots
+- **Distribution patterns** revealed through histogram analysis
 
 ## 🔮 Future Enhancements
 
@@ -137,37 +202,14 @@ Each notebook contains:
 - [ ] Include additional technical indicators
 - [ ] Implement deep learning models (LSTM, GRU)
 - [ ] Add sentiment analysis from financial news
+- [ ] Cross-validation with different time windows
+- [ ] Feature selection optimization
 
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👤 Author
-
-**HuJianJin**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## ⭐ Show Your Support
-
-Give a ⭐️ if this project helped you learn about financial data analysis and machine learning!
-
-## 📞 Contact
-
-If you have any questions or suggestions, feel free to reach out:
-- Email: your.email@example.com
-- Project Link: [https://github.com/yourusername/LinearRegression_XAUUSD](https://github.com/yourusername/LinearRegression_XAUUSD)
+**Disclaimer**: This project is for educational and research purposes only. It should not be used as financial advice for trading decisions. Always consult with financial professionals before making investment decisions.
 
 ---
 
-**Disclaimer**: This project is for educational and research purposes only. It should not be used as financial advice for trading decisions. Always consult with financial professionals before making investment decisions.
