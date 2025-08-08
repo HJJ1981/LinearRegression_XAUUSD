@@ -7,7 +7,7 @@
 
 ## 🔍 Project Overview
 
-This project implements **Linear Regression models** to predict Gold (XAU/USD) price movements using 15 carefully engineered features. The analysis focuses on predicting three key price points: **Close**, **High**, and **Low** prices based on historical weekly data spanning from January 2020 to June 2025.
+This project implements **Linear Regression models** to predict Gold (XAU/USD) price movements using 11 to 13 carefully engineered features. The analysis focuses on predicting three key price points: **Close**, **High**, and **Low** prices based on historical weekly data spanning from January 2020 to June 2025.
 
 ## 📊 Key Features
 
@@ -21,9 +21,9 @@ This project implements **Linear Regression models** to predict Gold (XAU/USD) p
 
 ```
 LinearRegression_XAUUSD/
-├── 📓 15Features_Linear_Regression_close_price_pred.ipynb  # Close price prediction model
-├── 📓 15Features_Linear_Regression_high_price_pred.ipynb   # High price prediction model  
-├── 📓 15Features_Linear_Regression_low_price_pred.ipynb    # Low price prediction model
+├── 📓 11Features_Linear_Regression_close_price_pred.ipynb  # Close price prediction model
+├── 📓 13Features_Linear_Regression_high_price_pred.ipynb   # High price prediction model  
+├── 📓 13Features_Linear_Regression_low_price_pred.ipynb    # Low price prediction model
 ├── 📄 XAUUSD_Weekly_20200105_20250629.csv                 # Raw weekly gold price data
 ├── 📄 price_data.csv                                      # Processed weekly gold price data
 ├── 🛠️ requirements.txt                                    # Python dependencies
@@ -101,7 +101,7 @@ jupyter lab
 
 ```python
 # Example: Close Price Prediction
-jupyter notebook 15Features_Linear_Regression_close_price_pred.ipynb
+jupyter notebook 11Features_Linear_Regression_close_price_pred.ipynb
 ```
 
 ## 📊 Model Results & Visualizations
