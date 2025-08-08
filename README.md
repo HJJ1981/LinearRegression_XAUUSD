@@ -41,7 +41,7 @@ LinearRegression_XAUUSD/
 - **Source**: Gold/USD (XAU/USD) market data
 
 ### Features Used
-The model utilizes **15 engineered features** including:
+The model utilizes **11 to 13 engineered features** including:
 - Price-based indicators (OHLC)
 - Volume metrics
 - Technical indicators
@@ -92,7 +92,7 @@ jupyter lab
 ## 📚 Usage
 
 1. **Data Exploration**: Start with any of the three main notebooks
-2. **Feature Engineering**: Review the 15-feature creation process
+2. **Feature Engineering**: Review the 11 to 13 feature creation process
 3. **Model Training**: Follow the linear regression implementation
 4. **Evaluation**: Analyze model performance metrics
 5. **Prediction**: Use trained models for price forecasting
@@ -181,7 +181,7 @@ Each notebook contains:
 - **Data Analysis**: `pandas`, `numpy`
 - **Machine Learning**: `scikit-learn`
 - **Visualization**: `matplotlib`, `seaborn`
-- **Deep Learning**: `tensorflow` (Not applicable in this project)
+- **Deep Learning**: `tensorflow` (Not applicable for this project)
 - **Statistical Analysis**: `scipy`
 - **Interactive Notebooks**: `jupyter lab`, `ipywidgets`
 
